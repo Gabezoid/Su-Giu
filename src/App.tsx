@@ -3,6 +3,7 @@ import { Search, ShoppingCart, Mail, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { Polaroid } from "./components/Polaroid";
 import { SectionLabel } from "./components/SectionLabel";
+import { Logo } from "./components/Logo";
 import StyleGuide from "./StyleGuide";
 
 export default function App() {
@@ -18,13 +19,8 @@ export default function App() {
 
       {/* Navbar */}
       <nav className="fixed top-0 z-50 w-full bg-surface/80 backdrop-blur-md flex justify-between items-center px-8 py-6">
-        <div className="cursor-pointer">
-          <img 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9iY6N-A5e68378078" 
-            alt="Su&Giù Logo" 
-            className="h-14 w-auto"
-            referrerPolicy="no-referrer"
-          />
+        <div className="cursor-pointer flex items-center">
+          <Logo className="h-24 md:h-32 w-auto object-contain" />
         </div>
         <div className="hidden md:flex gap-8 items-center">
           <a href="#" className="font-headline uppercase tracking-tighter font-black text-sm text-primary-container border-b-2 border-primary-container pb-1">
@@ -180,16 +176,16 @@ export default function App() {
           <div className="group cursor-pointer">
             <div className="bg-surface-container overflow-hidden">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKX7G7nGKM2FoYkYDyMqNvWFwVPwkBMgzMrCHw3F6l-KKKKxnxpRfgf6rBTQKoH6_iJ6VBRSaXz0yBSiHtnCeQEhEATfyPfIE4bPoo15VEnKlYJ3H1DfrV_VU0O2FLQloV4hbxTAA_E3EOtCQc2Ij_Yh7fbc5Km35uDy9I72bfg_mSVXl7WMSLvo5xJ_V7hrpwLfsDS7TijcZE3pjoK9_JZvPQ3T8I_WR8WYXiHvz2EkvaLiQr49I1lfo0rqKYiBCUwXYYpSZxEyvs" 
-                alt="Gilet Nuvola" 
+                src="/product-1.jpg" 
+                alt="Camicia Denim Fiorita" 
                 className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
             </div>
             <div className="mt-6 flex justify-between items-end">
               <div>
-                <h4 className="font-headline text-2xl uppercase font-bold">Gilet Nuvola</h4>
-                <p className="font-body text-on-surface-variant">Lino e Cotone</p>
+                <h4 className="font-headline text-2xl uppercase font-bold">Camicia Denim Fiorita</h4>
+                <p className="font-body text-on-surface-variant">Denim Ricamato</p>
               </div>
               <div className="text-right">
                 <p className="font-headline text-xl">€140</p>
@@ -201,16 +197,16 @@ export default function App() {
           <div className="group cursor-pointer translate-y-8">
             <div className="bg-surface-container overflow-hidden">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-96i9plB1M1Yo-8DUnpI8sTiPsAcNkBVj7c6NnFJQlQME2EsCFXBbMrgahEvH947XFPClIUY8PO7TS9wj2W0xj-_DgJCyt1l3NBy6IV1TkHTuGv3oKbxlrBKgxz_qxBWZWwMKRdyQJHo-TAqqBMhvuOghybYryJoOu98_nOs13DlOQEtVe5WDLM1Lx50zJii9ezDMy3ZXBPHy4SfxDE3zx1YOeTZE-28lz5jQVDq9j9Y71P8M49Ga22vxvrYfcAxalUsftjmBArUs" 
-                alt="Abito Libero" 
+                src="/product-2.jpg" 
+                alt="Abito Beige" 
                 className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
             </div>
             <div className="mt-6 flex justify-between items-end">
               <div>
-                <h4 className="font-headline text-2xl uppercase font-bold">Abito Libero</h4>
-                <p className="font-body text-on-surface-variant">Seta e Canapa</p>
+                <h4 className="font-headline text-2xl uppercase font-bold">Abito Beige</h4>
+                <p className="font-body text-on-surface-variant">Cotone Organico</p>
               </div>
               <div className="text-right">
                 <p className="font-headline text-xl">€195</p>
@@ -222,16 +218,16 @@ export default function App() {
           <div className="group cursor-pointer">
             <div className="bg-surface-container overflow-hidden">
               <img 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr38HcKmwzT7m7y4TDfxGZEI3WntqRmkneUsM--lObaSgAfUdb20Pi2iJ_5NBmzEdDqwoU6s4iIzd5nlhEx01sJnkZ6lg7oAVkNXQRhJmQkbodS0VzpbcL1Ktftx_Vo-tSOk-ZBhoxTokCAePu21VV1DqL2TAL0Y7AHc5rUfZsPaEKP9xIK2hXq9Y3XI5oK8wcrt0maboHSk7tDsd29TOBAweOwJZY4NVwUapGWrfj0d8L35AO6EZ_CRC0vAw8SG6KdiFkXnHuZ5YO" 
-                alt="Pantagonna Seta" 
+                src="/product-3.jpg" 
+                alt="Tuta Gialla" 
                 className="w-full aspect-[3/4] object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
                 referrerPolicy="no-referrer"
               />
             </div>
             <div className="mt-6 flex justify-between items-end">
               <div>
-                <h4 className="font-headline text-2xl uppercase font-bold">Pantagonna Seta</h4>
-                <p className="font-body text-on-surface-variant">Seta Habotai</p>
+                <h4 className="font-headline text-2xl uppercase font-bold">Tuta Gialla</h4>
+                <p className="font-body text-on-surface-variant">Lino Naturale</p>
               </div>
               <div className="text-right">
                 <p className="font-headline text-xl">€210</p>
@@ -297,12 +293,7 @@ export default function App() {
       <footer className="bg-surface-container-high text-on-surface font-label text-xs uppercase tracking-widest mt-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-12 py-16">
           <div className="space-y-6">
-            <img 
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9iY6N-A5e68378078" 
-              alt="Su&Giù Logo" 
-              className="h-20 w-auto"
-              referrerPolicy="no-referrer"
-            />
+            <Logo className="h-32 md:h-40 w-auto object-contain" variant="footer" />
             <p className="opacity-70 normal-case tracking-normal font-body">Fatto a Mano con cura, pezzo dopo pezzo, nel nostro laboratorio di Via Santa Giulia.</p>
             <p>© Su&Giù Torino - Fatto a Mano</p>
           </div>
